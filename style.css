@@ -1,0 +1,328 @@
+
+/* =================================
+   BRINCAMUNDO - CSS COMPARTILHADO
+   ================================= */
+
+:root {
+    --rosa: #ff6b81;
+    --azul: #63c7f2;
+    --amarelo: #ffcf56;
+    --verde: #8bd9a8;
+    --roxo: #9b82e8;
+    --texto: #39364b;
+    --fundo: #fffaf3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: var(--texto);
+    background-color: var(--fundo);
+}
+
+.navbar {
+    padding: 15px 0;
+}
+
+.logo {
+    color: var(--rosa) !important;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+.nav-link {
+    font-weight: 600;
+    margin-left: 12px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--rosa) !important;
+}
+
+/* Página inicial */
+
+.hero {
+    padding: 75px 0;
+    background: linear-gradient(135deg, #fff0f3, #e8f7ff);
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    font-weight: 900;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.hero-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 35px;
+    box-shadow: 12px 12px 0 var(--amarelo);
+}
+
+/* Botões */
+
+.btn-loja {
+    background-color: var(--rosa);
+    color: white;
+    border: 2px solid var(--rosa);
+    border-radius: 30px;
+    padding: 10px 22px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.btn-loja:hover {
+    background-color: #ed4f69;
+    border-color: #ed4f69;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Títulos */
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.pagina-topo {
+    background: linear-gradient(135deg, #ffe2e8, #e0f5ff);
+    padding: 65px 15px;
+}
+
+.pagina-topo h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.pagina-topo p {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+/* Categorias */
+
+.categoria {
+    padding: 25px 10px;
+    text-align: center;
+    border-radius: 22px;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.categoria:hover {
+    transform: translateY(-6px);
+}
+
+.categoria span {
+    display: block;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.categoria h5 {
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.categoria-rosa {
+    background-color: #ffe0e7;
+}
+
+.categoria-azul {
+    background-color: #dff3ff;
+}
+
+.categoria-amarela {
+    background-color: #fff0bd;
+}
+
+.categoria-verde {
+    background-color: #def8e5;
+}
+
+/* Cartões de produtos */
+
+.produto-card {
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(57, 54, 75, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.produto-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(57, 54, 75, 0.15);
+}
+
+.produto-card .card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.produto-card .card-body {
+    padding: 20px;
+}
+
+.produto-card h5 {
+    font-weight: 800;
+}
+
+.produto-card p {
+    color: #686579;
+}
+
+.produto-card .preco {
+    color: var(--rosa);
+    font-size: 1.35rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+/* Página de contato */
+
+.contato-info {
+    height: 100%;
+    padding: 30px;
+    border-radius: 25px;
+    background: linear-gradient(145deg, #ffe1e8, #e4f5ff);
+}
+
+.contato-info h2,
+.formulario-card h2 {
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.contato-info > p {
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.info-item span {
+    font-size: 1.8rem;
+}
+
+.info-item h5 {
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.info-item p {
+    margin-bottom: 0;
+    overflow-wrap: anywhere;
+}
+
+.contato-decoracao {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 35px;
+}
+
+.formulario-card {
+    padding: 30px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 5px 25px rgba(57, 54, 75, 0.08);
+}
+
+.form-control,
+.form-select {
+    padding: 12px;
+    border: 1px solid #e3dfeb;
+    border-radius: 12px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--azul);
+    box-shadow: 0 0 0 0.2rem rgba(99, 199, 242, 0.2);
+}
+
+/* Rodapé */
+
+.footer {
+    background-color: #39364b;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsividade */
+
+@media (max-width: 767px) {
+    .hero {
+        padding: 45px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-img {
+        max-height: 300px;
+    }
+
+    .section-title {
+        font-size: 1.65rem;
+    }
+
+    .pagina-topo {
+        padding: 45px 15px;
+    }
+
+    .produto-card .card-img-top {
+        height: 160px;
+    }
+
+    .produto-card .card-body {
+        padding: 13px;
+    }
+
+    .produto-card h5 {
+        font-size: 1rem;
+    }
+
+    .produto-card .btn {
+        font-size: 0.85rem;
+        padding: 9px 5px;
+    }
+
+    .contato-info,
+    .formulario-card {
+        padding: 22px;
+    }
+}
